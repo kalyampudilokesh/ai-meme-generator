@@ -8,6 +8,11 @@ pipeline {
                 echo "Building..."
             }
         }
+          stage("Auto-fix") {
+            steps {
+                echo "fixing..."
+            }
+        }
 
         stage("Test") {
             steps {
